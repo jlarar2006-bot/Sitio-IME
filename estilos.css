@@ -1,0 +1,171 @@
+:root {
+    --color-principal: #09337F;    /* Azul oscuro del logo (I, E) */
+    --color-acento: #37B34A;       /* Verde brillante del logo (M) */
+    --color-fondo: #0050A0;        /* Azul de fondo del logo */
+    --color-fondo-tarjeta: #FFFFFF;/* Fondo blanco para legibilidad */
+    --color-texto: #2D2D2D;        /* Texto oscuro sobre fondos claros */
+    --color-blanco: #FFFFFF;       /* Texto y bordes blancos */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+/* Menú de navegación */
+header {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-acento);
+}
+
+/* Secciones generales (Tarjetas contenedor superpuestas) */
+section {
+    padding: 40px 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: var(--color-fondo-tarjeta);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: var(--color-principal);
+}
+
+h2 {
+    border-bottom: 3px solid var(--color-acento);
+    padding-bottom: 8px;
+}
+
+/* Sección de presentación */
+.presentacion {
+    text-align: center;
+}
+
+.presentacion h1 {
+    color: var(--color-principal);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.logo-presentacion img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.lema {
+    font-style: italic;
+    color: var(--color-acento);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Tarjetas de productos y servicios */
+.producto {
+    border-left: 5px solid var(--color-acento);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: #f4f8fb;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Contenedor del mapa de Google Maps */
+.mapa-contenedor {
+    width: 100%;
+    margin: 20px 0 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--color-acento);
+}
+
+.mapa-contenedor iframe {
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+
+/* Formulario de contacto */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--color-acento);
+    box-shadow: 0 0 5px rgba(55, 179, 74, 0.5);
+}
+
+form button {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2e963e;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    font-size: 14px;
+    margin-top: 40px;
+}
