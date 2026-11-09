@@ -226,23 +226,4 @@ footer {
     font-size: 0.9em;
 }
 
-@media (max-width: 768px) {
-    section, .seccion {
-        margin: 15px;
-        padding: 20px 15px;
-    }
 
-    .portada-interna {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .portada-interna .logo-grande {
-        max-width: 180px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 8px 0;
-    }
-}
